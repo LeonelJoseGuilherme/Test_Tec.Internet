@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>CADASTRO DO CLIENTE</h1>
+        
+        <div class="form-section">
+            <div class="section-title">INFORMAÇÕES PESSOAIS</div>
+            
+            <div class="form-group">
+                <label for="nome">NOME COMPLETO</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="idade">IDADE</label>
+                    <input type="number" id="idade" name="idade">
+                </div>
+                <div class="form-group half-width">
+                    <label for="telefone">TELEFONE CELULAR</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="endereco">ENDEREÇO</label>
+                <input type="text" id="endereco" name="endereco">
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <div class="section-title">INFORMAÇÕES DA VISITA</div>
+            
+            <div class="form-group">
+                <label for="gastos">MÉDIA DE GASTOS POR VISITA (3 MESES)</label>
+                <input type="text" id="gastos" name="gastos">
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="dia">DIA DA SEMANA</label>
+                    <select id="dia" name="dia">
+                        <option value="">Selecione</option>
+                        <option value="segunda">Segunda-feira</option>
+                        <option value="terca">Terça-feira</option>
+                        <option value="quarta">Quarta-feira</option>
+                        <option value="quinta">Quinta-feira</option>
+                        <option value="sexta">Sexta-feira</option>
+                        <option value="sabado">Sábado</option>
+                        <option value="domingo">Domingo</option>
+                    </select>
+                </div>
+                <div class="form-group half-width">
+                    <label for="horario">HORÁRIO</label>
+                    <select id="horario" name="horario">
+                        <option value="">Selecione</option>
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button-group">
+            <button type="button" class="cancel-btn" id="cancelar">CANCELAR</button>
+            <button type="button" class="save-btn" id="salvar">SALVAR</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

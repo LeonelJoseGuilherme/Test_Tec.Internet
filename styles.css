@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.form-section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 18px;
+    color: #555;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    background-color: #fff5f7; /* Rosa claro */
+    border: 2px solid #ffcdd2; /* Borda rosa mais forte */
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Cinza escuro para campos */
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.half-width {
+    flex: 1;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn {
+    background-color: #ff5e00; /* Laranja */
+    color: white;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+.cancel-btn:hover {
+    background-color: #f57c00; /* Laranja mais escuro */
+}
